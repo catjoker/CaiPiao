@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:luckpan="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp">
+
+    </com.youth.banner.Banner>
+
+    <cn.jzvd.JZVideoPlayerStandard
+        android:id="@+id/videoplayer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/banner"
+        android:layout_marginTop="10dp" />
+    <Button
+        android:id="@+id/test_bt_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoplayer"
+        android:layout_marginTop="20dp"
+        android:text="点我调用通知"/>
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="10dp"
+        android:layout_below="@id/test_bt_notice"/>
+
+    <!--<com.BASofttech.caipiao.util.MoveScaleRotateView
+        android:id="@+id/iv_pickup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />-->
+
+</RelativeLayout>

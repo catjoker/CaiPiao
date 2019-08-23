@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="names">
+        <!--<item>action</item>
+        <item>adventure</item>
+        <item>combat</item>
+        <item>moba</item>-->
+        <!--<item>other</item>
+        <item>role</item>-->
+        <item>白玩</item>
+        <item>谢谢惠顾</item>
+        <item>1积分</item>
+        <item>iphone</item>
+
+    </string-array>
+
+    <string-array name="icons">
+        <!--<item>action</item>
+        <item>adventure</item>
+        <item>combat</item>
+        <item>moba</item>-->
+        <!--<item>other</item>
+        <item>role</item>-->
+        <item>meizu</item>
+        <item>iphone</item>
+        <item>meizu</item>
+        <item>iphone</item>
+
+    </string-array>
+
+
+</resources>

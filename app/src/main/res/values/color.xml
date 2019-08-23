@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="checkedRed">#E42E43</color>
+    <color name="checkedRedtranspert">#33E42E43</color>
+    <color name="uncheckedBlack">#333333</color>
+    <color name="white">#FFFFFF</color>
+    <color name="readgrey">#FFFAEC</color>
+    <color name="readtextgrey">#B7B7B7</color>
+    <color name="backgroundsetting">#F0F0F0</color>
+    <color name="settingwordblue">#5E93CA</color>
+    <color name="buttonorange">#EC8921</color>
+    <color name="cyclecolor1">#0080c6</color>
+    <color name="cyclecolor2">#959595</color>
+    <color name="black">#000000</color>
+</resources>

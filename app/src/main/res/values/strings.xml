@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">随机玩彩</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_text_name">随机大厅</string>
+    <string name="bt_random_name">点我随机</string>
+    <string name="bt_clear_name">清空</string>
+    <string name="et_name">请输入注数</string>
+    <string name="exit">再点一次退出程序</string>
+
+    <string name="login">我</string>
+    <string name="aa">1</string>
+    <string name="bb">2</string>
+    <string name="cc">3</string>
+    <string name="dd">4</string>
+</resources>
