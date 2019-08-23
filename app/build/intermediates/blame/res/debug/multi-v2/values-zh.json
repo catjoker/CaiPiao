@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\CaiPiao\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\stray cat\\.gradle\\caches\\transforms-1\\files-1.1\\support-2.0.1.aar\\8ce6c7966861e3fcef7305efde21ccae\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,113,169,223,280,338,397,450,508,559",
+                        "endColumns": "57,55,53,56,57,58,52,57,50,56",
+                        "endOffsets": "108,164,218,275,333,392,445,503,554,611"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "147,205,261,315,372,430,489,542,600,651",
+                        "endColumns": "57,55,53,56,57,58,52,57,50,56",
+                        "endOffsets": "200,256,310,367,425,484,537,595,646,703"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\stray cat\\.gradle\\caches\\transforms-1\\files-1.1\\jiaozivideoplayer-6.2.9.aar\\00dcc6ae6affe900c7736b4ccfa2ebd1\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,105,147,185,249,303,358",
+                        "endColumns": "49,41,37,63,53,54,54",
+                        "endOffsets": "100,142,180,244,298,353,408"
+                    },
+                    "to": {
+                        "startLines": "2,3,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,105,708,746,810,864,919",
+                        "endColumns": "49,41,37,63,53,54,54",
+                        "endOffsets": "100,142,741,805,859,914,969"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,338 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:2:1-72:12
+INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml:2:1-72:12
+INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml:2:1-72:12
+INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml:2:1-72:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\6ff3080d51c3af3181b5ff93bfbf2aba\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.anzaizai:EasyRefreshLayout:1.3.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\EasyRefreshLayout-1.3.1.aar\c9957d70c10c1fe0af3b0071bcc2980f\AndroidManifest.xml:2:1-17:12
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\9fe0695c842967112926385327f7aeba\AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\0576b7c9b92b25d4fb74d45aac29a671\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\db35af9dacb0b9ee7a93cf19000fbf7a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\4933d3e3e4b2005c56d7fc58a6e1dbb4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\f21d1b5c7f338a1f7813e09e381378a3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.yanzhenjie.permission:support:2.0.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-2.0.1.aar\8ce6c7966861e3fcef7305efde21ccae\AndroidManifest.xml:17:1-40:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\81ca8eb61a2a279a7a1d36809eb2d0c3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\7f3d0f69462c972999d437e0f08f618e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\8721cb3781ef584ae2a8c304fd402ed1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\c3e3bf478cc8c6f941e357bfa6a7f4c2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\09de4c2ac9155b491d1b2e164e609536\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\97c2ef239b43cac7e9ba05491ff04cb2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife:9.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\butterknife-9.0.0.aar\ec574cc4490b0a05d52ba1ce135b3073\AndroidManifest.xml:2:1-7:12
+MERGED from [com.jakewharton:butterknife-runtime:9.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\butterknife-runtime-9.0.0.aar\ba8720316ffa4054fa394dd390012936\AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\482fa0296b86a27f0bcc98e8f9957472\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\d6d455507a394b162bd5422f665827b1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\415c9f8c50409f81d696953a77623b07\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\d484332cd52e9ef5a15fbd2ac3138dc9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\b76051fe1d91c01c87a63b68f2f7c19c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\3aa64f293b969a49994b2d411bc5a29a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\cc975fb95ec6930c32d8843f1ce01a34\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\497f91bf2f7a63c167b80f4abc252a56\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\67f8642f8305a52e131a495cc030de8e\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\a5c6a6bea68f269bbab8f28f57ffc365\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\2610f296fb46188e35259efb3b7629c2\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\5628c8ded4c57199747e8c3cfc31c503\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\7533bece8963957ef8a25fbe67529bb8\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\8e0ae3b21cec0841ffc6f6a7268cf24b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\3178be75d70dc5d9671f98c657b33d3e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\d90462d04a935516bc4b0b72eace2e55\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\a6f63e4eb16b64e9d37adca39bef7a6e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\29877e712c5018eb04b7588dc48048c9\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\2dd24a646ce1e4197a04f9682b817fb4\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\d4d9607614ff9ef4b36ac47d6effdbc1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\ebd36672b103ec7dba8676b489d09c73\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a959a8d97a5e6e2aeec0f350c738ff8a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.youth.banner:banner:1.4.9] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\banner-1.4.9.aar\29ec6259a58f65e0635a679323401029\AndroidManifest.xml:2:1-11:12
+MERGED from [cn.jzvd:jiaozivideoplayer:6.2.9] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\jiaozivideoplayer-6.2.9.aar\00dcc6ae6affe900c7736b4ccfa2ebd1\AndroidManifest.xml:2:1-13:12
+MERGED from [org.litepal.android:java:3.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\java-3.0.0.aar\9e9ca5137974d07bd812870f118f691f\AndroidManifest.xml:2:1-14:12
+MERGED from [com.github.ybq:Android-SpinKit:1.0.2] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\Android-SpinKit-1.0.2.aar\1b1cf43e9322f4e840a5c2f3f1c2a57d\AndroidManifest.xml:2:1-12:12
+MERGED from [org.litepal.android:core:3.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\core-3.0.0.aar\8b865db04dd835edad82d3e65009f4e4\AndroidManifest.xml:2:1-14:12
+INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml:2:1-72:12
+INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml:2:1-72:12
+INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml:2:1-72:12
+	package
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:4:5-37
+		INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml
+		INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:6:5-32
+		INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml
+		INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:5:5-28
+		INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml
+		INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:8:22-64
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:9:5-75
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:9:22-72
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:10:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:11:22-77
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:12:5-76
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:12:22-73
+uses-permission#android.permission.VIBRATE
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:13:5-66
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:13:22-63
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:14:5-83
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:14:22-80
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:15:5-78
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:15:22-75
+uses-permission#android.permission.SYSTEM_OVERLAY_WINDOW
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:16:5-80
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:16:22-77
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:17:5-79
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:17:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:18:5-81
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:18:22-78
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:19:5-95
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:19:22-76
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:20:5-92
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:20:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:21:5-95
+MERGED from [cn.jzvd:jiaozivideoplayer:6.2.9] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\jiaozivideoplayer-6.2.9.aar\00dcc6ae6affe900c7736b4ccfa2ebd1\AndroidManifest.xml:11:5-79
+MERGED from [cn.jzvd:jiaozivideoplayer:6.2.9] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\jiaozivideoplayer-6.2.9.aar\00dcc6ae6affe900c7736b4ccfa2ebd1\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:21:22-76
+application
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:24:5-70:19
+MERGED from [com.github.anzaizai:EasyRefreshLayout:1.3.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\EasyRefreshLayout-1.3.1.aar\c9957d70c10c1fe0af3b0071bcc2980f\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.anzaizai:EasyRefreshLayout:1.3.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\EasyRefreshLayout-1.3.1.aar\c9957d70c10c1fe0af3b0071bcc2980f\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\9fe0695c842967112926385327f7aeba\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\9fe0695c842967112926385327f7aeba\AndroidManifest.xml:10:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\0576b7c9b92b25d4fb74d45aac29a671\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\0576b7c9b92b25d4fb74d45aac29a671\AndroidManifest.xml:22:5-20
+MERGED from [com.yanzhenjie.permission:support:2.0.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-2.0.1.aar\8ce6c7966861e3fcef7305efde21ccae\AndroidManifest.xml:24:5-38:19
+MERGED from [com.yanzhenjie.permission:support:2.0.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-2.0.1.aar\8ce6c7966861e3fcef7305efde21ccae\AndroidManifest.xml:24:5-38:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\67f8642f8305a52e131a495cc030de8e\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\67f8642f8305a52e131a495cc030de8e\AndroidManifest.xml:22:5-94
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\a5c6a6bea68f269bbab8f28f57ffc365\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\a5c6a6bea68f269bbab8f28f57ffc365\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\2610f296fb46188e35259efb3b7629c2\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\2610f296fb46188e35259efb3b7629c2\AndroidManifest.xml:22:5-23:19
+MERGED from [org.litepal.android:java:3.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\java-3.0.0.aar\9e9ca5137974d07bd812870f118f691f\AndroidManifest.xml:11:5-12:19
+MERGED from [org.litepal.android:java:3.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\java-3.0.0.aar\9e9ca5137974d07bd812870f118f691f\AndroidManifest.xml:11:5-12:19
+MERGED from [org.litepal.android:core:3.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\core-3.0.0.aar\8b865db04dd835edad82d3e65009f4e4\AndroidManifest.xml:11:5-12:19
+MERGED from [org.litepal.android:core:3.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\core-3.0.0.aar\8b865db04dd835edad82d3e65009f4e4\AndroidManifest.xml:11:5-12:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\67f8642f8305a52e131a495cc030de8e\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from [com.github.anzaizai:EasyRefreshLayout:1.3.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\EasyRefreshLayout-1.3.1.aar\c9957d70c10c1fe0af3b0071bcc2980f\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:28:9-41
+	android:icon
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:26:9-42
+	android:allowBackup
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:25:9-35
+	android:theme
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:30:9-40
+	android:networkSecurityConfig
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:29:9-69
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:27:9-38
+activity#com.BASofttech.caipiao.ui.activity.SplashActivity
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:32:9-41:20
+	android:label
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:34:13-45
+	android:theme
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:35:13-77
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:33:13-55
+activity#com.BASofttech.caipiao.ui.activity.SplashActivity2
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:42:9-51:20
+	android:label
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:44:13-45
+	android:theme
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:45:13-53
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:43:13-56
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:46:13-50:29
+action#android.intent.action.MAIN
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:47:17-69
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:47:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:49:17-77
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:49:27-74
+activity#com.BASofttech.caipiao.ui.activity.LoginActivity
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:53:9-57:20
+	android:theme
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:55:13-53
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:54:13-76
+activity#com.BASofttech.caipiao.ui.activity.HomeActivity
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:59:9-64:65
+	android:screenOrientation
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:63:13-49
+	android:windowSoftInputMode
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:62:13-52
+	android:configChanges
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:61:13-74
+	android:theme
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:64:13-53
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:60:13-75
+provider#com.BASofttech.caipiao.MyContentProvider
+ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:65:9-69:52
+	android:process
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:69:13-40
+	android:authorities
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:66:13-57
+	android:permission
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:68:13-57
+	android:name
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml:67:13-46
+uses-sdk
+INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml
+INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\6ff3080d51c3af3181b5ff93bfbf2aba\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\6ff3080d51c3af3181b5ff93bfbf2aba\AndroidManifest.xml:20:5-44
+MERGED from [com.github.anzaizai:EasyRefreshLayout:1.3.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\EasyRefreshLayout-1.3.1.aar\c9957d70c10c1fe0af3b0071bcc2980f\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.anzaizai:EasyRefreshLayout:1.3.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\EasyRefreshLayout-1.3.1.aar\c9957d70c10c1fe0af3b0071bcc2980f\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\9fe0695c842967112926385327f7aeba\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\glide-4.8.0.aar\9fe0695c842967112926385327f7aeba\AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:design:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\0576b7c9b92b25d4fb74d45aac29a671\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\0576b7c9b92b25d4fb74d45aac29a671\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\db35af9dacb0b9ee7a93cf19000fbf7a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\db35af9dacb0b9ee7a93cf19000fbf7a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\4933d3e3e4b2005c56d7fc58a6e1dbb4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\4933d3e3e4b2005c56d7fc58a6e1dbb4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\f21d1b5c7f338a1f7813e09e381378a3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\f21d1b5c7f338a1f7813e09e381378a3\AndroidManifest.xml:20:5-44
+MERGED from [com.yanzhenjie.permission:support:2.0.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-2.0.1.aar\8ce6c7966861e3fcef7305efde21ccae\AndroidManifest.xml:20:5-22:41
+MERGED from [com.yanzhenjie.permission:support:2.0.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-2.0.1.aar\8ce6c7966861e3fcef7305efde21ccae\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\81ca8eb61a2a279a7a1d36809eb2d0c3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\81ca8eb61a2a279a7a1d36809eb2d0c3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\7f3d0f69462c972999d437e0f08f618e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\7f3d0f69462c972999d437e0f08f618e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\8721cb3781ef584ae2a8c304fd402ed1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\8721cb3781ef584ae2a8c304fd402ed1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\c3e3bf478cc8c6f941e357bfa6a7f4c2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\c3e3bf478cc8c6f941e357bfa6a7f4c2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\09de4c2ac9155b491d1b2e164e609536\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\09de4c2ac9155b491d1b2e164e609536\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\97c2ef239b43cac7e9ba05491ff04cb2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\97c2ef239b43cac7e9ba05491ff04cb2\AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:9.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\butterknife-9.0.0.aar\ec574cc4490b0a05d52ba1ce135b3073\AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton:butterknife:9.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\butterknife-9.0.0.aar\ec574cc4490b0a05d52ba1ce135b3073\AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton:butterknife-runtime:9.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\butterknife-runtime-9.0.0.aar\ba8720316ffa4054fa394dd390012936\AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton:butterknife-runtime:9.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\butterknife-runtime-9.0.0.aar\ba8720316ffa4054fa394dd390012936\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\482fa0296b86a27f0bcc98e8f9957472\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\482fa0296b86a27f0bcc98e8f9957472\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\d6d455507a394b162bd5422f665827b1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\d6d455507a394b162bd5422f665827b1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\415c9f8c50409f81d696953a77623b07\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\415c9f8c50409f81d696953a77623b07\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\d484332cd52e9ef5a15fbd2ac3138dc9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\d484332cd52e9ef5a15fbd2ac3138dc9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\b76051fe1d91c01c87a63b68f2f7c19c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\b76051fe1d91c01c87a63b68f2f7c19c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\3aa64f293b969a49994b2d411bc5a29a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\3aa64f293b969a49994b2d411bc5a29a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\cc975fb95ec6930c32d8843f1ce01a34\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\cc975fb95ec6930c32d8843f1ce01a34\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\497f91bf2f7a63c167b80f4abc252a56\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\497f91bf2f7a63c167b80f4abc252a56\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\67f8642f8305a52e131a495cc030de8e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\67f8642f8305a52e131a495cc030de8e\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\a5c6a6bea68f269bbab8f28f57ffc365\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.8.0.aar\a5c6a6bea68f269bbab8f28f57ffc365\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\2610f296fb46188e35259efb3b7629c2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\2610f296fb46188e35259efb3b7629c2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\5628c8ded4c57199747e8c3cfc31c503\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\5628c8ded4c57199747e8c3cfc31c503\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\7533bece8963957ef8a25fbe67529bb8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\7533bece8963957ef8a25fbe67529bb8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\8e0ae3b21cec0841ffc6f6a7268cf24b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\8e0ae3b21cec0841ffc6f6a7268cf24b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\3178be75d70dc5d9671f98c657b33d3e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\3178be75d70dc5d9671f98c657b33d3e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\d90462d04a935516bc4b0b72eace2e55\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\d90462d04a935516bc4b0b72eace2e55\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\a6f63e4eb16b64e9d37adca39bef7a6e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\a6f63e4eb16b64e9d37adca39bef7a6e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\29877e712c5018eb04b7588dc48048c9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\29877e712c5018eb04b7588dc48048c9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\2dd24a646ce1e4197a04f9682b817fb4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\2dd24a646ce1e4197a04f9682b817fb4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\d4d9607614ff9ef4b36ac47d6effdbc1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\d4d9607614ff9ef4b36ac47d6effdbc1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\ebd36672b103ec7dba8676b489d09c73\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\ebd36672b103ec7dba8676b489d09c73\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a959a8d97a5e6e2aeec0f350c738ff8a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\a959a8d97a5e6e2aeec0f350c738ff8a\AndroidManifest.xml:20:5-44
+MERGED from [com.youth.banner:banner:1.4.9] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\banner-1.4.9.aar\29ec6259a58f65e0635a679323401029\AndroidManifest.xml:7:5-9:41
+MERGED from [com.youth.banner:banner:1.4.9] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\banner-1.4.9.aar\29ec6259a58f65e0635a679323401029\AndroidManifest.xml:7:5-9:41
+MERGED from [cn.jzvd:jiaozivideoplayer:6.2.9] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\jiaozivideoplayer-6.2.9.aar\00dcc6ae6affe900c7736b4ccfa2ebd1\AndroidManifest.xml:7:5-9:41
+MERGED from [cn.jzvd:jiaozivideoplayer:6.2.9] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\jiaozivideoplayer-6.2.9.aar\00dcc6ae6affe900c7736b4ccfa2ebd1\AndroidManifest.xml:7:5-9:41
+MERGED from [org.litepal.android:java:3.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\java-3.0.0.aar\9e9ca5137974d07bd812870f118f691f\AndroidManifest.xml:7:5-9:41
+MERGED from [org.litepal.android:java:3.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\java-3.0.0.aar\9e9ca5137974d07bd812870f118f691f\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.ybq:Android-SpinKit:1.0.2] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\Android-SpinKit-1.0.2.aar\1b1cf43e9322f4e840a5c2f3f1c2a57d\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.ybq:Android-SpinKit:1.0.2] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\Android-SpinKit-1.0.2.aar\1b1cf43e9322f4e840a5c2f3f1c2a57d\AndroidManifest.xml:8:5-10:41
+MERGED from [org.litepal.android:core:3.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\core-3.0.0.aar\8b865db04dd835edad82d3e65009f4e4\AndroidManifest.xml:7:5-9:41
+MERGED from [org.litepal.android:core:3.0.0] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\core-3.0.0.aar\8b865db04dd835edad82d3e65009f4e4\AndroidManifest.xml:7:5-9:41
+INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml
+INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml
+		INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml
+		ADDED from D:\CaiPiao\app\src\main\AndroidManifest.xml
+		INJECTED from D:\CaiPiao\app\src\main\AndroidManifest.xml
+activity#com.yanzhenjie.permission.bridge.BridgeActivity
+ADDED from [com.yanzhenjie.permission:support:2.0.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-2.0.1.aar\8ce6c7966861e3fcef7305efde21ccae\AndroidManifest.xml:25:9-27:55
+	android:theme
+		ADDED from [com.yanzhenjie.permission:support:2.0.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-2.0.1.aar\8ce6c7966861e3fcef7305efde21ccae\AndroidManifest.xml:27:13-52
+	android:name
+		ADDED from [com.yanzhenjie.permission:support:2.0.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-2.0.1.aar\8ce6c7966861e3fcef7305efde21ccae\AndroidManifest.xml:26:13-75
+provider#com.yanzhenjie.permission.FileProvider
+ADDED from [com.yanzhenjie.permission:support:2.0.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-2.0.1.aar\8ce6c7966861e3fcef7305efde21ccae\AndroidManifest.xml:29:9-37:20
+	android:grantUriPermissions
+		ADDED from [com.yanzhenjie.permission:support:2.0.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-2.0.1.aar\8ce6c7966861e3fcef7305efde21ccae\AndroidManifest.xml:33:13-47
+	android:authorities
+		ADDED from [com.yanzhenjie.permission:support:2.0.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-2.0.1.aar\8ce6c7966861e3fcef7305efde21ccae\AndroidManifest.xml:31:13-67
+	android:exported
+		ADDED from [com.yanzhenjie.permission:support:2.0.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-2.0.1.aar\8ce6c7966861e3fcef7305efde21ccae\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.yanzhenjie.permission:support:2.0.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-2.0.1.aar\8ce6c7966861e3fcef7305efde21ccae\AndroidManifest.xml:30:13-66
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [com.yanzhenjie.permission:support:2.0.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-2.0.1.aar\8ce6c7966861e3fcef7305efde21ccae\AndroidManifest.xml:34:13-36:65
+	android:resource
+		ADDED from [com.yanzhenjie.permission:support:2.0.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-2.0.1.aar\8ce6c7966861e3fcef7305efde21ccae\AndroidManifest.xml:36:17-62
+	android:name
+		ADDED from [com.yanzhenjie.permission:support:2.0.1] C:\Users\stray cat\.gradle\caches\transforms-1\files-1.1\support-2.0.1.aar\8ce6c7966861e3fcef7305efde21ccae\AndroidManifest.xml:35:17-67
