@@ -5,12 +5,12 @@
     android:layout_height="56dp"
     android:background="#8700cc">
 
-    <TextView
+    <android.support.v7.widget.AppCompatTextView
         android:id="@+id/tv_text"
         style="@style/title_text"
         android:text="@string/title_text_name" />
 
-    <ImageView
+    <android.support.v7.widget.AppCompatImageView
         android:id="@+id/iv_login"
         style="@style/small_iv_button"
         android:layout_alignParentRight="true"

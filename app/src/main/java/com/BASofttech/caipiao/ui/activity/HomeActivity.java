@@ -55,7 +55,6 @@ public class HomeActivity extends BaseActivity{
 	private Fragment_Me fifth;
 	private FragmentManager fm;
 	private FragmentTransaction ft;
-	private Context mContext;
 	private long exitTime;
 	//	private ViewPager mViewPager;
 
@@ -116,7 +115,7 @@ public class HomeActivity extends BaseActivity{
 
 	}
      public void showPopwindow(){
-		 View  contentView = LayoutInflater.from(mContext).inflate(R.layout.pop_window,null,false);
+		 View  contentView = LayoutInflater.from(context).inflate(R.layout.pop_window,null,false);
 		 PopupWindow pw = new PopupWindow(contentView, 400,350);
 		 pw.setTouchable(true);
 		 pw.setTouchInterceptor(new View.OnTouchListener() {
@@ -128,7 +127,7 @@ public class HomeActivity extends BaseActivity{
 		 });
 		 pw.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 		 pw.setOutsideTouchable(true);
-		 View view = LayoutInflater.from(mContext).inflate(R.layout.activity_home,null);
+		 View view = LayoutInflater.from(context).inflate(R.layout.activity_home,null);
 		 pw.showAtLocation(view,Gravity.CENTER|Gravity.CENTER_HORIZONTAL,0,0);
 //		 pw.showAsDropDown(view, -250,-250,Gravity.BOTTOM);
 		 showToast("点击");
@@ -198,8 +197,7 @@ public class HomeActivity extends BaseActivity{
 	}
 	public void exit() {
 		if ((System.currentTimeMillis() - exitTime) > 2000) {
-			Toast.makeText(getApplicationContext(), getResources().getString(R.string.exit),
-					Toast.LENGTH_SHORT).show();
+			showToast(getResources().getString(R.string.exit));
 			exitTime = System.currentTimeMillis();
 		} else {
 			finish();

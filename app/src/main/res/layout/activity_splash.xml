@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
+    <android.support.v7.widget.AppCompatImageView
         android:id="@+id/sp_iv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,7 +12,7 @@
         android:background="@drawable/catmobile"
         />
     <!--android:background="@drawable/catmobile"-->
-    <Button
+    <android.support.v7.widget.AppCompatButton
         android:id="@+id/sp_jump_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

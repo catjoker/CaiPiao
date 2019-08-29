@@ -11,5 +11,8 @@ public class Constant {
      * spinner文字
      * */
     public static StringBuffer spinnerSb = new StringBuffer();
-
+    /**
+     *观察者模式字段
+     * */
+    public final static int BUTTON_RANDOM = 0;
 }

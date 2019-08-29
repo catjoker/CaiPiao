@@ -4,17 +4,15 @@ import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.RequiresApi;
+import android.support.v7.widget.AppCompatImageView;
+import android.support.v7.widget.AppCompatTextView;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.BASofttech.caipiao.R;
-import com.BASofttech.caipiao.util.ToastUtil;
 import com.bumptech.glide.Glide;
 import com.tencent.smtt.export.external.interfaces.JsResult;
 import com.tencent.smtt.export.external.interfaces.SslErrorHandler;
@@ -31,7 +29,7 @@ public class Fragment_Gift extends BaseFragment {
     @BindView(R.id.webview)
     WebView webview;
     @BindView(R.id.tv_text)
-    TextView iv_text;
+    AppCompatTextView iv_text;
     CookieManager mCookieManager;
     private final int WEB_GOBACK = 1;
 
@@ -93,7 +91,7 @@ public class Fragment_Gift extends BaseFragment {
                             .asGif()
                             .load(R.drawable.loading)
 //                            .apply()
-                            .into((ImageView) (loadingDialog.getWindow().findViewById(R.id.iv_loading)));
+                            .into((AppCompatImageView) (loadingDialog.getWindow().findViewById(R.id.iv_loading)));
 //                    Glide.with(mContext).load(R.drawable.loading).into((ImageView) (loadingDialog.getWindow().findViewById(R.id.iv_loading)));
                     loadingDialog.getWindow().setDimAmount(0f);//核心代码 解决了无法去除遮罩问题
                     loadingDialog.show();

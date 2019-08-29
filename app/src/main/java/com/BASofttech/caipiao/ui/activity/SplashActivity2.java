@@ -4,16 +4,16 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.util.Log;
+import android.support.v7.widget.AppCompatButton;
+import android.support.v7.widget.AppCompatImageView;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
-import android.widget.Button;
-import android.widget.ImageView;
 
 import com.BASofttech.caipiao.R;
-import com.BASofttech.caipiao.ui.activity.HomeActivity;
+import com.BASofttech.caipiao.util.Constant;
 import com.BASofttech.caipiao.util.LogUtil;
+import com.BASofttech.caipiao.util.Observeable;
 import com.BASofttech.caipiao.util.ToastUtil;
 
 public class SplashActivity2 extends Activity {
@@ -29,7 +29,7 @@ public class SplashActivity2 extends Activity {
              toActivity();
          }
      };*/
-    private Button sp_jump_btn;
+    private AppCompatButton sp_jump_btn;
     private View view;
     private boolean isOnclick = false;
 
@@ -37,9 +37,9 @@ public class SplashActivity2 extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         view = View.inflate(this, R.layout.activity_splash, null);
-        ImageView sp_iv = (ImageView) view.findViewById(R.id.sp_iv);
+        AppCompatImageView sp_iv = (AppCompatImageView) view.findViewById(R.id.sp_iv);
         timerStart();
-        sp_jump_btn = (Button)view.findViewById(R.id.sp_jump_btn);
+        sp_jump_btn = (AppCompatButton)view.findViewById(R.id.sp_jump_btn);
         // TODO Auto-generated method stub
         setContentView(view);
 
@@ -73,11 +73,9 @@ public class SplashActivity2 extends Activity {
             public void onAnimationEnd(Animation animation) {
                 // TODO Auto-generated method stub
                 if (isOnclick) {
-                    Log.e("end", "onanimationend");
                     ToastUtil.showToast(getApplication(),"jieshu");
                     isOnclick = false;
                 } else {
-                    Log.e("end", "onanimationend222");
                     toActivity();
                     finish();
                 }

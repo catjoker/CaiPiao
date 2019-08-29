@@ -10,7 +10,7 @@
         layout="@layout/item_title"/>
 
 
-    <TextView
+    <android.support.v7.widget.AppCompatTextView
         android:id="@+id/tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,19 +29,19 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dp30"/>
 
-        <Button
+        <android.support.v7.widget.AppCompatButton
             android:id="@+id/bt_random"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dp42"
             android:text="@string/bt_random_name" />
 
-        <Button
+        <android.support.v7.widget.AppCompatButton
             android:id="@+id/bt_clear"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dp42"
             android:text="@string/bt_clear_name" />
 
-        <EditText
+        <android.support.v7.widget.AppCompatEditText
             android:id="@+id/et"
             android:layout_width="120dp"
             android:layout_height="match_parent"

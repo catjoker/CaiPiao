@@ -11,6 +11,7 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.support.v4.app.NotificationCompat;
+import android.support.v7.widget.AppCompatButton;
 import android.view.View;
 import android.widget.Button;
 
@@ -39,7 +40,7 @@ public class Fragment_Home extends BaseFragment {
     @BindView(R.id.videoplayer)
     JZVideoPlayerStandard jzVideoPlayerStandard;
     @BindView(R.id.test_bt_notice)
-    Button test_bt_notice;
+    AppCompatButton test_bt_notice;
     private List list;
     @Override
     protected int setLayout() {

@@ -1,5 +1,7 @@
 package com.BASofttech.caipiao.ui.fragment;
 
+import android.support.v7.widget.AppCompatImageView;
+import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -20,13 +22,13 @@ public class Fragment_LuckyPan extends BaseFragment implements LuckPanLayout.Ani
     @BindView(R.id.luckpan_layout)
     LuckPanLayout luckPanLayout;
     @BindView(R.id.go)
-    ImageView goBtn;
+    AppCompatImageView goBtn;
     @BindView(R.id.tv_text)
-    TextView tv_text;
+    AppCompatTextView tv_text;
     @BindView(R.id.hit_user_tv)
-    TextView hit_user_tv;
+    AppCompatTextView hit_user_tv;
     @BindView(R.id.huodong_rule)
-    TextView huodong_rule;
+    AppCompatTextView huodong_rule;
 
     @Override
     protected int setLayout() {
@@ -52,7 +54,7 @@ public class Fragment_LuckyPan extends BaseFragment implements LuckPanLayout.Ani
     @Override
     public void endAnimation(int position) {
         //转盘结束获得转盘的结果
-        Toast.makeText(getActivity(), "Position = " + position + "," + strs[position], Toast.LENGTH_SHORT).show();
+        showToast("Position = " + position + "," + strs[position]);
     }
 
     @OnClick({R.id.go})

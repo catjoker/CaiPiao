@@ -66,7 +66,7 @@ public class Fragment_Me extends BaseFragment {
                 break;
             case R.id.rl_background3:
                 View view = View.inflate(getActivity(), R.layout.dialog_logout, null);
-                TextView tv_title = view.findViewById(R.id.tv_title);
+                AppCompatTextView tv_title = view.findViewById(R.id.tv_title);
                 tv_title.setText("您确定要退出登录么");
                 //加上style  和contextThemeWrapper 可以将黑边去除  确定取消按钮需要自定义button   并且不能使用positiveButton和negativeButon
                 new AlertDialog.Builder(new ContextThemeWrapper(getActivity(), R.style.Theme_Transparent))

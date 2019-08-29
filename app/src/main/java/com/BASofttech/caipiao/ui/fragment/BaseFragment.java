@@ -31,6 +31,7 @@ public abstract class BaseFragment extends Fragment {
      * @param context 与之相关联的activity
      */
     private Unbinder unbinder;
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -89,22 +90,24 @@ public abstract class BaseFragment extends Fragment {
 
     /**
      * intent跳转
+     *
      * @param context
      * @param clazz
      */
-    protected void toClass(Context context,Class<? extends Activity> clazz){
-        toClass(context,clazz,null);
+    protected void toClass(Context context, Class<? extends Activity> clazz) {
+        toClass(context, clazz, null);
     }
 
     /**
      * intent带值跳转
+     *
      * @param context
      * @param clazz
      * @param bundle
      */
-    protected void toClass(Context context, Class<? extends Activity> clazz, Bundle bundle){
-        Intent intent = new Intent(context,clazz);
-        if (bundle != null){
+    protected void toClass(Context context, Class<? extends Activity> clazz, Bundle bundle) {
+        Intent intent = new Intent(context, clazz);
+        if (bundle != null) {
             intent.putExtras(bundle);
         }
         startActivity(intent);
@@ -112,18 +115,20 @@ public abstract class BaseFragment extends Fragment {
 
     /**
      * 带返回值的跳转
+     *
      * @param context
      * @param clazz
      * @param bundle
      * @param requestCode
      */
-    protected void toClass(Context context, Class<? extends Activity> clazz, Bundle bundle, int requestCode){
-        Intent intent = new Intent(context,clazz);
-        if (bundle != null){
+    protected void toClass(Context context, Class<? extends Activity> clazz, Bundle bundle, int requestCode) {
+        Intent intent = new Intent(context, clazz);
+        if (bundle != null) {
             intent.putExtras(bundle);
         }
-        startActivityForResult(intent,requestCode);
+        startActivityForResult(intent, requestCode);
     }
+
     protected void showToast(String msg) {
         ToastUtil.showToast(mContext, msg);
     }

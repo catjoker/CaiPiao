@@ -35,7 +35,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
 
-        <ImageView
+        <android.support.v7.widget.AppCompatImageView
             android:id="@+id/go"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
         android:layout_marginTop="20dp"
         >
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/hit_user_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -74,9 +74,9 @@
             android:focusableInTouchMode="true"
             >
             <requestFocus/>
-        </TextView>
+        </android.support.v7.widget.AppCompatTextView>
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="中奖名单"
@@ -110,7 +110,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"/>
 
-            <TextView
+            <android.support.v7.widget.AppCompatTextView
                 android:layout_below="@+id/huodong_rule"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -122,7 +122,7 @@
         </LinearLayout>
 
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/huodong_rule"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

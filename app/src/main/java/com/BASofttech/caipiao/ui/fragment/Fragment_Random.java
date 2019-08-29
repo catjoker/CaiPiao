@@ -1,30 +1,30 @@
 package com.BASofttech.caipiao.ui.fragment;
 
-import android.content.Context;
 import android.os.Handler;
-import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.AppCompatButton;
+import android.support.v7.widget.AppCompatEditText;
+import android.support.v7.widget.AppCompatImageView;
 import android.support.v7.widget.AppCompatSpinner;
+import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.Spinner;
-import android.widget.TextView;
 
-import com.BASofttech.caipiao.ui.activity.LoginActivity;
 import com.BASofttech.caipiao.R;
 import com.BASofttech.caipiao.adapter.ListViewAdapter;
 import com.BASofttech.caipiao.adapter.RandomListAdapter;
+import com.BASofttech.caipiao.ui.activity.LoginActivity;
 import com.BASofttech.caipiao.util.Constant;
+import com.BASofttech.caipiao.util.Observeable;
 import com.BASofttech.caipiao.util.RandomCalculate;
 import com.ajguan.library.EasyRefreshLayout;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Observable;
+import java.util.Observer;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -33,19 +33,19 @@ import butterknife.OnClick;
  * 优化随机数生成逻辑 190403
  * 优化代码结构,将内部类分离出去190821
  */
-public class Fragment_Random extends BaseFragment implements EasyRefreshLayout.EasyEvent {
+public class Fragment_Random extends BaseFragment implements EasyRefreshLayout.EasyEvent, Observer {
     @BindView(R.id.bt_random)
-    Button bt_random;
+    AppCompatButton bt_random;
     @BindView(R.id.bt_clear)
-    Button bt_clear;
+    AppCompatButton bt_clear;
     @BindView(R.id.iv_login)
-    ImageView iv_login;
+    AppCompatImageView iv_login;
     @BindView(R.id.tv)
-    TextView tv;
+    AppCompatTextView tv;
     @BindView(R.id.lv)
     RecyclerView recyclerView;
     @BindView(R.id.et)
-    EditText et;
+    AppCompatEditText et;
     @BindView(R.id.spinner)
     AppCompatSpinner spinner;
     @BindView(R.id.easyRefreshLayout)
@@ -61,7 +61,10 @@ public class Fragment_Random extends BaseFragment implements EasyRefreshLayout.E
     private List lists;
     private RandomListAdapter randomListAdapter;
     private RandomCalculate cal;
-
+    private int endIndex;
+    private int startIndex;
+    private final int pageSize = 20;
+    private int parseInt;
 
     @Override
     protected int setLayout() {
@@ -71,11 +74,15 @@ public class Fragment_Random extends BaseFragment implements EasyRefreshLayout.E
     @Override
     protected void initView(View view) {
         easyRefreshLayout.addEasyEvent(this);
+        //观察者模式初始化
+        Observeable.getInstance().addObserver(this);
         lists = new ArrayList<String>();
     }
 
     @Override
     protected void initData() {
+        startIndex = 0;
+        endIndex = pageSize;
         lists.add(Constant.DCB_NAME);
         lists.add(Constant.DLT_NAME);
         lists.add(Constant.SEVEN_NAME);
@@ -106,30 +113,9 @@ public class Fragment_Random extends BaseFragment implements EasyRefreshLayout.E
         switch (view.getId()) {
             case R.id.bt_random:
                 // 获得自定义的注数
-                list.clear();
-                randomListAdapter.notifyDataSetChanged();
-                try {
-                    if (et.getText().toString() != null
-                            && !"".equals(et.getText().toString())) {
-                        int parseInt = Integer.parseInt(et.getText().toString());
-                        if (parseInt > 20) {
-                            showToast("您输入的注数过多请重新输入");
-                            break;
-                        }
-
-                        for (int i = 0; i < parseInt; i++) {
-                            clickRandomMoment(Constant.spinnerSb.toString());
-                        }
-                        randomListAdapter.notifyDataSetChanged();
-                    } else {
-                        // 默认执行一次
-                        clickRandomMoment(Constant.spinnerSb.toString());
-
-                    }
-                } catch (Exception e) {
-                    showToast("请输入数字,并且不超过20注");
-                }
-
+                endIndex = pageSize;
+                startIndex = 0;
+                Observeable.getInstance().setState(Constant.BUTTON_RANDOM);
                 break;
             // 清空
             case R.id.bt_clear:
@@ -146,6 +132,34 @@ public class Fragment_Random extends BaseFragment implements EasyRefreshLayout.E
                 break;
         }
 
+    }
+
+    private void btnRandom() {
+        list.clear();
+        randomListAdapter.notifyDataSetChanged();
+        try {
+            if (et.getText().toString() != null
+                    && !"".equals(et.getText().toString())) {
+                parseInt = Integer.parseInt(et.getText().toString());
+                if (parseInt >= endIndex) {
+                    for (int i = startIndex; i < endIndex; i++) {
+                        clickRandomMoment(Constant.spinnerSb.toString());
+                    }
+                } else {
+                    for (int i = startIndex; i < parseInt; i++) {
+                        clickRandomMoment(Constant.spinnerSb.toString());
+                    }
+                }
+
+                randomListAdapter.notifyDataSetChanged();
+            } else {
+                // 默认执行一次
+                clickRandomMoment(Constant.spinnerSb.toString());
+
+            }
+        } catch (Exception e) {
+            showToast("请输入数字,并且不超过50注");
+        }
     }
 
     //开始随机
@@ -169,9 +183,24 @@ public class Fragment_Random extends BaseFragment implements EasyRefreshLayout.E
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+//                easyRefreshLayout.loadMoreComplete();
+//                randomListAdapter.notifyDataSetChanged();
                 easyRefreshLayout.loadMoreComplete(new EasyRefreshLayout.Event() {
                     @Override
                     public void complete() {
+                        startIndex += pageSize;
+                        endIndex += pageSize;
+                        if (parseInt - endIndex > 0) {
+                            for (int i = startIndex; i < endIndex; i++) {
+                                clickRandomMoment(Constant.spinnerSb.toString());
+                            }
+                        } else if (parseInt - endIndex < 0 && parseInt - startIndex > 0) {
+                            for (int i = startIndex; i < parseInt; i++) {
+                                clickRandomMoment(Constant.spinnerSb.toString());
+                            }
+                        } else {
+                            showToast("没有更多");
+                        }
                         randomListAdapter.notifyDataSetChanged();
                     }
                 }, 500);
@@ -184,10 +213,22 @@ public class Fragment_Random extends BaseFragment implements EasyRefreshLayout.E
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+//                easyRefreshLayout.autoRefresh(1000);
                 easyRefreshLayout.refreshComplete();
                 randomListAdapter.notifyDataSetChanged();
                 showToast("refresh success");
             }
         }, 1000);
+    }
+
+    @Override
+    public void update(Observable o, Object arg) {
+        int type = (int) arg;
+        switch (type) {
+            case Constant.BUTTON_RANDOM:
+                btnRandom();
+                break;
+
+        }
     }
 }

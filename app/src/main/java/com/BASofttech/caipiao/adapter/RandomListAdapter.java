@@ -16,6 +16,7 @@ import android.widget.TextView;
 import com.BASofttech.caipiao.R;
 import com.BASofttech.caipiao.model.DCBModel;
 import com.BASofttech.caipiao.util.Constant;
+import com.BASofttech.caipiao.util.Observeable;
 
 import java.util.ArrayList;
 
@@ -44,6 +45,7 @@ public class RandomListAdapter extends RecyclerView.Adapter<RandomListAdapter.Ra
         SpannableStringBuilder style = new SpannableStringBuilder(list.get(position));
         ForegroundColorSpan redSpan = new ForegroundColorSpan(Color.rgb(234, 32, 0));
         ForegroundColorSpan greenSpan = new ForegroundColorSpan(Color.rgb(36, 178, 246));
+
         //列表信息颜色
         if (Constant.spinnerSb.toString() != null) {
             if (Constant.DCB_NAME.equals(Constant.spinnerSb.toString())) {
