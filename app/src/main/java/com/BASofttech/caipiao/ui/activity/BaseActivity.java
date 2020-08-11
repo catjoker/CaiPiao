@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.BASofttech.caipiao.util.LogUtil;
 import com.BASofttech.caipiao.util.ToastUtil;
 
 import butterknife.ButterKnife;
@@ -24,6 +25,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     private boolean isshowtitle = true;
     private boolean isshowstate = true;
     private long exitTime = 0;
+    private final String TAG = getClass().getSimpleName();
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,12 +52,45 @@ public abstract class BaseActivity extends AppCompatActivity {
         initView();
         initData();
     }
+    /**
+     * 加载布局
+     * */
     protected abstract int initLayout();
+    /**
+     * 初始化布局控件
+     * */
     protected abstract void initView();
+    /**
+     * 初始化数据
+     * */
     protected abstract void initData();
+    /**
+     * Log展示(个人习惯使用error级别)
+     * */
+    protected void showLog(String msg){
+        LogUtil.e(TAG,msg);
+    }
+    /**
+     * Toast展示
+     * */
     protected void showToast(String msg){
         ToastUtil.showToast(context,msg);
     }
+    /**
+     * 设置显示标题栏
+     * */
+    protected void setTitle(boolean isshow){
+        isshowtitle = isshow;
+    }
+    /**
+     * 设置显示状态栏
+     * */
+    protected void setState(boolean isshow){
+        isshowstate = isshow;
+    }
+    /**
+     * 跳转新页面
+     * */
     protected void toNewActivity(Context context, Class<? extends Activity> clazz) {
         toNewActivity(context, clazz, null);
     }
@@ -75,6 +110,9 @@ public abstract class BaseActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
+    /**
+     * 退出APP
+     * */
     protected void exit(){
         if ((System.currentTimeMillis() - exitTime) > 2000) {
             showToast("再点一次你就要退出了哦");

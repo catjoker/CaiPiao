@@ -17,6 +17,7 @@ import android.view.WindowManager;
 import com.BASofttech.caipiao.R;
 import com.BASofttech.caipiao.R2;
 import com.BASofttech.caipiao.util.DragFloatActionButton;
+import com.BASofttech.caipiao.util.LogUtil;
 import com.BASofttech.caipiao.util.ToastUtil;
 import com.yanzhenjie.permission.AndPermission;
 
@@ -63,6 +64,7 @@ public class LoginActivity extends BaseActivity {
             case R.id.mr:
                 //                if(!iv_drag.isDrag()){
                 showToast("响应点击");
+                showLog(getResources().getString(R.string.exit));
                 finish();
                 break;
             case R.id.login_bt:
@@ -108,7 +110,7 @@ public class LoginActivity extends BaseActivity {
         }
         return super.onKeyDown(keyCode, event);
     }
-    //安卓9.0指纹识别   不可自定义界面 只能有一个按钮(取消/使用密码)
+    //安卓9.0指纹识别   不可自定义界面  只能有一个按钮(取消/使用密码)
     @TargetApi(Build.VERSION_CODES.P)
     public void finger(){
         mBiometricPrompt = new BiometricPrompt
@@ -138,27 +140,27 @@ public class LoginActivity extends BaseActivity {
             public void onAuthenticationError(int errorCode, CharSequence errString) {
                 super.onAuthenticationError(errorCode, errString);
 
-                Log.e("login", "onAuthenticationError " + errString);
+                LogUtil.e("login", "onAuthenticationError " + errString);
             }
 
             @Override
             public void onAuthenticationSucceeded(BiometricPrompt.AuthenticationResult result) {
                 super.onAuthenticationSucceeded(result);
                 showToast("登陆成功");
-                Log.e("login", "onAuthenticationSucceeded " + result.toString());
+                LogUtil.e("login", "onAuthenticationSucceeded " + result.toString());
             }
 
             @Override
             public void onAuthenticationFailed() {
                 super.onAuthenticationFailed();
 
-                Log.i("login", "onAuthenticationFailed ");
+                LogUtil.e("login", "onAuthenticationFailed ");
             }
 
             @Override
             public void onAuthenticationHelp(int helpCode, CharSequence helpString) {
                 super.onAuthenticationHelp(helpCode, helpString);
-                Log.e("login", "onAuthenticationSucceeded " + helpString.toString());
+                LogUtil.e("login", "onAuthenticationSucceeded " + helpString.toString());
 
             }
         };

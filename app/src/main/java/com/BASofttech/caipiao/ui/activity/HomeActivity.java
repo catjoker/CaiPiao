@@ -26,6 +26,7 @@ import com.BASofttech.caipiao.ui.fragment.Fragment_Me;
 import com.BASofttech.caipiao.ui.fragment.Fragment_Random;
 import com.BASofttech.caipiao.util.Constant;
 import com.BASofttech.caipiao.util.LogUtil;
+import com.BASofttech.caipiao.util.PermissionUtil;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.yanzhenjie.permission.AndPermission;
 
@@ -57,7 +58,7 @@ public class HomeActivity extends BaseActivity{
 	private FragmentTransaction ft;
 	private long exitTime;
 	//	private ViewPager mViewPager;
-
+	String[] permisson = {Manifest.permission.READ_PHONE_STATE,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION};
     @Override
     protected int initLayout() {
         return R.layout.activity_home;
@@ -70,16 +71,7 @@ public class HomeActivity extends BaseActivity{
 		third = new Fragment_LuckyPan();
 		forth = new Fragment_Random();
 		fifth = new Fragment_Me();
-		AndPermission.with(this)
-				.runtime()
-				.permission(Manifest.permission.READ_PHONE_STATE,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION)
-				.onGranted(permissions -> {
-					// Storage permission are allowed.
-				})
-				.onDenied(permissions -> {
-					// Storage permission are not allowed.
-				})
-				.start();
+		PermissionUtil.setPermission(permisson,this);
 	}
     @Override
     protected void initData() {
@@ -121,7 +113,7 @@ public class HomeActivity extends BaseActivity{
 		 pw.setTouchInterceptor(new View.OnTouchListener() {
 			 @Override
 			 public boolean onTouch(View v, MotionEvent event) {
-				 Log.e("touch","touch");
+				 showLog("touch");
 				 return true;
 			 }
 		 });
@@ -198,6 +190,7 @@ public class HomeActivity extends BaseActivity{
 	public void exit() {
 		if ((System.currentTimeMillis() - exitTime) > 2000) {
 			showToast(getResources().getString(R.string.exit));
+			showLog(getResources().getString(R.string.exit));
 			exitTime = System.currentTimeMillis();
 		} else {
 			finish();

@@ -11,9 +11,7 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 
 import com.BASofttech.caipiao.R;
-import com.BASofttech.caipiao.util.Constant;
 import com.BASofttech.caipiao.util.LogUtil;
-import com.BASofttech.caipiao.util.Observeable;
 import com.BASofttech.caipiao.util.ToastUtil;
 
 public class SplashActivity2 extends Activity {

@@ -13,12 +13,14 @@ import android.os.Build;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.widget.AppCompatButton;
 import android.view.View;
-import android.widget.Button;
 
+import com.BASofttech.caipiao.APIService;
+import com.BASofttech.caipiao.bean.NewLuckBean;
 import com.BASofttech.caipiao.ui.activity.LoginActivity;
 import com.BASofttech.caipiao.R;
 import com.BASofttech.caipiao.util.GlideImageLoader;
-import com.BASofttech.caipiao.util.MoveScaleRotateView;
+import com.BASofttech.caipiao.util.LogUtil;
+import com.BASofttech.caipiao.util.NetWorkUtil;
 import com.bumptech.glide.Glide;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
@@ -31,6 +33,11 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.OnClick;
 import cn.jzvd.JZVideoPlayerStandard;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 import static android.content.Context.NOTIFICATION_SERVICE;
 
@@ -44,7 +51,7 @@ public class Fragment_Home extends BaseFragment {
     private List list;
     @Override
     protected int setLayout() {
-        return R.layout.fragment_main;
+        return R.layout.fragment_home;
     }
 
     @Override
@@ -54,8 +61,30 @@ public class Fragment_Home extends BaseFragment {
 
     @Override
     protected void initData() {
-        list.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538114595406&di=fe34c7b91ac0ffa65b83ee83eac99734&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0132c258d4e4fea801219c77a10aba.JPG%401280w_1l_2o_100sh.jpg");
-        list.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538114684424&di=12883af008225eab17da4c9c1c5977ff&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201302%2F23%2F20130223134035_duvhU.thumb.700_0.jpeg");
+//        Retrofit retrofit = new Retrofit.Builder()
+//                .baseUrl("http://guoqiang.space")
+//                .addConverterFactory(GsonConverterFactory.create())
+//                .build();
+//        APIService apiService = retrofit.create(APIService.class);
+        Call<NewLuckBean> newLuck = NetWorkUtil.getApiService().getNewLuck();
+        newLuck.enqueue(new Callback<NewLuckBean>() {
+            @Override
+            public void onResponse(Call<NewLuckBean> call, Response<NewLuckBean> response) {
+                LogUtil.e("onResponse",response.body().toString());
+                NewLuckBean body = response.body();
+                String everyLuck =body.getEveryluck();
+                String everynper = body.getEverynper();
+                LogUtil.e("getLuckandnper",everyLuck+"..."+everynper);
+            }
+
+            @Override
+            public void onFailure(Call<NewLuckBean> call, Throwable t) {
+                LogUtil.e("onResponse",t.getMessage());
+            }
+        });
+
+        list.add("https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1267755794,1897874823&fm=26&gp=0.jpg");
+        list.add("https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2814505717,510060409&fm=26&gp=0.jpg");
         list.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538114721611&di=fbd7d0c84d83c43bf41c26be729bffac&imgtype=0&src=http%3A%2F%2Fpic18.photophoto.cn%2F20110108%2F0035035918164551_b.jpg");
         banner.setImageLoader(new GlideImageLoader());
         //        banner.setBannerStyle(BannerConfig.NUM_INDICATOR);//设置数字还是圆点模式 默认圆点

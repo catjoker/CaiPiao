@@ -13,6 +13,7 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 
 import com.BASofttech.caipiao.R;
+import com.BASofttech.caipiao.util.LogUtil;
 import com.bumptech.glide.Glide;
 import com.tencent.smtt.export.external.interfaces.JsResult;
 import com.tencent.smtt.export.external.interfaces.SslErrorHandler;
@@ -35,7 +36,7 @@ public class Fragment_Gift extends BaseFragment {
 
     @Override
     protected int setLayout() {
-        return R.layout.activity_dlt;
+        return R.layout.fragment_gift;
     }
 
     private Handler handler = new Handler() {
@@ -122,15 +123,15 @@ public class Fragment_Gift extends BaseFragment {
 
             @Override
             public void onReceivedSslError(WebView webView, SslErrorHandler sslErrorHandler, com.tencent.smtt.export.external.interfaces.SslError sslError) {
-                showToast("错误");
-//                handler.proceed();
+//                showToast("错误");
+                sslErrorHandler.proceed();
             }
 
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 view.loadUrl(request.getUrl().toString());
-                Log.e("request.getUrl()", request.getUrl().toString());
+                LogUtil.e("request.getUrl()", request.getUrl().toString());
                 /*return true 表示当前url即使是重定向url也不会再执行（除了在return true之前使用webview.loadUrl(url)除外，因为这个会重新加载）
                   return false  表示由系统执行url，直到不再执行此方法，即加载完重定向的url（即具体的url，不再有重定向）
                   简而言之  true支持重定向  false不支持181212
@@ -184,7 +185,7 @@ public class Fragment_Gift extends BaseFragment {
 //
 //                    // 创建方法
                     webview.loadUrl(javascript);
-                    webview.loadUrl(javascript2);
+                     webview.loadUrl(javascript2);
                     webview.loadUrl(javascript3);
                     webview.loadUrl(javascript4);
 //

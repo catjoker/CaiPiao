@@ -68,7 +68,7 @@ public class Fragment_Random extends BaseFragment implements EasyRefreshLayout.E
 
     @Override
     protected int setLayout() {
-        return R.layout.activity_double_color_ball;
+        return R.layout.fragment_random;
     }
 
     @Override
