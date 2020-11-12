@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/click_color"><!-- RelativeLayout 点击事件变换背景颜色-->
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/icon0"
             android:layout_width="25dp"
             android:layout_height="25dp"
@@ -23,7 +23,7 @@
             android:layout_marginLeft="15dp"
             android:background="@drawable/app_icon" />
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/left_tv0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
         android:layout_below="@id/line1"
         android:background="@drawable/click_color">
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/icon1"
             android:layout_width="25dp"
             android:layout_height="25dp"
@@ -60,7 +60,7 @@
             android:layout_marginLeft="15dp"
             android:background="@drawable/app_icon" />
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/left_tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
         android:layout_below="@id/line2"
         android:background="@drawable/click_color">
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/icon2"
             android:layout_width="25dp"
             android:layout_height="25dp"
@@ -97,7 +97,7 @@
             android:layout_marginLeft="15dp"
             android:background="@drawable/app_icon" />
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/left_tv2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -126,7 +126,7 @@
         android:layout_below="@id/line3"
         android:background="@drawable/click_color">
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/icon3"
             android:layout_width="25dp"
             android:layout_height="25dp"
@@ -134,7 +134,7 @@
             android:layout_marginLeft="15dp"
             android:background="@drawable/app_icon" />
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/left_tv3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

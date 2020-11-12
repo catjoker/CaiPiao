@@ -12,7 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class NetWorkUtil {
     private static Retrofit retrofit;
     private static synchronized Retrofit getRetrofit(){
-        if (retrofit==null{
+        if (retrofit==null){
             retrofit = new Retrofit.Builder()
                     .baseUrl("http://guoqiang.space")
                     .addConverterFactory(GsonConverterFactory.create())
@@ -20,6 +20,7 @@ public class NetWorkUtil {
         }
         return retrofit;
     }
+    //获取接口具体地址的工具类
     public static APIService getApiService(){
         APIService apiService =  getRetrofit().create(APIService.class);
         return apiService;

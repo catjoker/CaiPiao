@@ -1,21 +1,21 @@
 package com.BASofttech.caipiao.ui.activity;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.DialogInterface;
 import android.hardware.biometrics.BiometricPrompt;
 import android.os.Build;
 import android.os.CancellationSignal;
-import android.support.annotation.RequiresApi;
-import android.support.v7.widget.AppCompatButton;
-import android.support.v7.widget.AppCompatEditText;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
 
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatEditText;
+
 import com.BASofttech.caipiao.R;
-import com.BASofttech.caipiao.R2;
 import com.BASofttech.caipiao.util.DragFloatActionButton;
 import com.BASofttech.caipiao.util.LogUtil;
 import com.BASofttech.caipiao.util.ToastUtil;
@@ -28,13 +28,13 @@ import static android.Manifest.permission.ACCESS_COARSE_LOCATION;
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
 public class LoginActivity extends BaseActivity {
-    @BindView(R2.id.login_bt)
+    @BindView(R.id.login_bt)
     AppCompatButton login_bt;
-    @BindView(R2.id.login_et_password)
+    @BindView(R.id.login_et_password)
     AppCompatEditText login_et_password;
-    @BindView(R2.id.login_et_user)
+    @BindView(R.id.login_et_user)
     AppCompatEditText login_et_user;
-    @BindView(R2.id.mr)
+    @BindView(R.id.mr)
     DragFloatActionButton iv_drag;
     private String psw;
     private String id;
@@ -58,7 +58,7 @@ public class LoginActivity extends BaseActivity {
 
     }
 
-    @OnClick({R2.id.mr, R2.id.login_bt})
+    @OnClick({R.id.mr, R.id.login_bt})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.mr:
@@ -111,6 +111,7 @@ public class LoginActivity extends BaseActivity {
         return super.onKeyDown(keyCode, event);
     }
     //安卓9.0指纹识别   不可自定义界面  只能有一个按钮(取消/使用密码)
+    @SuppressLint("MissingPermission")
     @TargetApi(Build.VERSION_CODES.P)
     public void finger(){
         mBiometricPrompt = new BiometricPrompt

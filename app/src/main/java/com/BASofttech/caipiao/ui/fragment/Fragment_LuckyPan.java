@@ -1,11 +1,9 @@
 package com.BASofttech.caipiao.ui.fragment;
 
-import android.support.v7.widget.AppCompatImageView;
-import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 
 import com.BASofttech.caipiao.R;
 import com.BASofttech.caipiao.util.LuckPanLayout;

@@ -2,19 +2,20 @@ package com.BASofttech.caipiao.util;
 
 import android.animation.ObjectAnimator;
 import android.content.Context;
-import android.support.design.widget.FloatingActionButton;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.ViewGroup;
 import android.view.animation.DecelerateInterpolator;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 
 /**
  * Created by jerry.guan on 2/15/2017.
  */
 
-public class DragFloatActionButton extends FloatingActionButton{
+public class DragFloatActionButton extends FloatingActionButton {
 
     private int parentHeight;
     private int parentWidth;

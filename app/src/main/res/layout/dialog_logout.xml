@@ -9,7 +9,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		>
-		<android.support.v7.widget.AppCompatImageView
+		<androidx.appcompat.widget.AppCompatImageView
 			android:id="@+id/iv_logo"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
@@ -18,7 +18,7 @@
 			android:layout_marginLeft="10dp"
 			android:layout_marginTop="10dp"
 			/>
-		<android.support.v7.widget.AppCompatTextView
+		<androidx.appcompat.widget.AppCompatTextView
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:text="提示"
@@ -28,7 +28,7 @@
 			android:layout_marginLeft="2dp"
 			android:textColor="@color/black"/>
 	</RelativeLayout>
-	<android.support.v7.widget.AppCompatTextView
+	<androidx.appcompat.widget.AppCompatTextView
 		android:id="@+id/tv_title"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"

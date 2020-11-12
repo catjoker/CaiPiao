@@ -1,16 +1,19 @@
 package com.BASofttech.caipiao.ui.fragment;
 
 import android.os.Handler;
-import android.support.v7.widget.AppCompatButton;
-import android.support.v7.widget.AppCompatEditText;
-import android.support.v7.widget.AppCompatImageView;
-import android.support.v7.widget.AppCompatSpinner;
-import android.support.v7.widget.AppCompatTextView;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatEditText;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatSpinner;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.BASofttech.caipiao.R;
 import com.BASofttech.caipiao.adapter.ListViewAdapter;
@@ -23,17 +26,20 @@ import com.ajguan.library.EasyRefreshLayout;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Observable;
 import java.util.Observer;
 
 import butterknife.BindView;
 import butterknife.OnClick;
+import io.reactivex.Observable;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.functions.Function;
+import io.reactivex.schedulers.Schedulers;
 
 /**
  * 优化随机数生成逻辑 190403
  * 优化代码结构,将内部类分离出去190821
  */
-public class Fragment_Random extends BaseFragment implements EasyRefreshLayout.EasyEvent, Observer {
+public class Fragment_Random extends BaseFragment implements EasyRefreshLayout.EasyEvent {
     @BindView(R.id.bt_random)
     AppCompatButton bt_random;
     @BindView(R.id.bt_clear)
@@ -75,7 +81,8 @@ public class Fragment_Random extends BaseFragment implements EasyRefreshLayout.E
     protected void initView(View view) {
         easyRefreshLayout.addEasyEvent(this);
         //观察者模式初始化
-        Observeable.getInstance().addObserver(this);
+//        Observeable.getInstance().addObserver(this);
+
         lists = new ArrayList<String>();
     }
 
@@ -115,7 +122,8 @@ public class Fragment_Random extends BaseFragment implements EasyRefreshLayout.E
                 // 获得自定义的注数
                 endIndex = pageSize;
                 startIndex = 0;
-                Observeable.getInstance().setState(Constant.BUTTON_RANDOM);
+//                Observeable.getInstance().setState(Constant.BUTTON_RANDOM);
+                doObservable(Constant.BUTTON_RANDOM);
                 break;
             // 清空
             case R.id.bt_clear:
@@ -220,15 +228,35 @@ public class Fragment_Random extends BaseFragment implements EasyRefreshLayout.E
             }
         }, 1000);
     }
-
-    @Override
-    public void update(Observable o, Object arg) {
-        int type = (int) arg;
-        switch (type) {
-            case Constant.BUTTON_RANDOM:
-                btnRandom();
-                break;
-
-        }
+//
+    private void doObservable(int type){
+        //测试使用RXJAVA
+        Observable.just(type)
+                .map(new Function<Integer, Integer>() {
+                    @Override
+                    public Integer apply(Integer integer) throws Exception {
+                        return integer;
+                    }
+                })
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(s ->{
+                    switch(s){
+                        case Constant.BUTTON_RANDOM:
+                            btnRandom();
+                            break;
+                    }
+                    Log.d("JG",s+"");
+                });
     }
+//    @Override
+//    public void update(Observable o, Object arg) {
+//        int type = (int) arg;
+//        switch (type) {
+//            case Constant.BUTTON_RANDOM:
+//                btnRandom();
+//                break;
+//
+//        }
+//    }
 }

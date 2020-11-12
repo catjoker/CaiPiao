@@ -10,22 +10,29 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
-import android.support.v4.app.NotificationCompat;
-import android.support.v7.widget.AppCompatButton;
+import android.util.Log;
 import android.view.View;
+
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.core.app.NotificationCompat;
 
 import com.BASofttech.caipiao.APIService;
 import com.BASofttech.caipiao.bean.NewLuckBean;
+import com.BASofttech.caipiao.model.DCBModel;
 import com.BASofttech.caipiao.ui.activity.LoginActivity;
 import com.BASofttech.caipiao.R;
 import com.BASofttech.caipiao.util.GlideImageLoader;
 import com.BASofttech.caipiao.util.LogUtil;
 import com.BASofttech.caipiao.util.NetWorkUtil;
 import com.bumptech.glide.Glide;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
 import com.youth.banner.Transformer;
 import com.youth.banner.listener.OnBannerListener;
+
+import org.litepal.LitePal;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,22 +73,6 @@ public class Fragment_Home extends BaseFragment {
 //                .addConverterFactory(GsonConverterFactory.create())
 //                .build();
 //        APIService apiService = retrofit.create(APIService.class);
-        Call<NewLuckBean> newLuck = NetWorkUtil.getApiService().getNewLuck();
-        newLuck.enqueue(new Callback<NewLuckBean>() {
-            @Override
-            public void onResponse(Call<NewLuckBean> call, Response<NewLuckBean> response) {
-                LogUtil.e("onResponse",response.body().toString());
-                NewLuckBean body = response.body();
-                String everyLuck =body.getEveryluck();
-                String everynper = body.getEverynper();
-                LogUtil.e("getLuckandnper",everyLuck+"..."+everynper);
-            }
-
-            @Override
-            public void onFailure(Call<NewLuckBean> call, Throwable t) {
-                LogUtil.e("onResponse",t.getMessage());
-            }
-        });
 
         list.add("https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1267755794,1897874823&fm=26&gp=0.jpg");
         list.add("https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2814505717,510060409&fm=26&gp=0.jpg");
@@ -113,6 +104,71 @@ public class Fragment_Home extends BaseFragment {
         //        JZVideoPlayerStandard.startFullscreen(getActivity(), JZVideoPlayerStandard.class, "http://2449.vod.myqcloud.com/2449_22ca37a6ea9011e5acaaf51d105342e3.f20.mp4", "嫂子辛苦了");
         Glide.with(getActivity()).load("http://p.qpic.cn/videoyun/0/2449_43b6f696980311e59ed467f22794e792_1/640").into(jzVideoPlayerStandard.thumbImageView);
         // jzVideoPlayerStandard.thumbImageView.setImageURI(url);
+            Call<NewLuckBean> newLuck = NetWorkUtil.getApiService().getNewLuck();
+            newLuck.enqueue(new Callback<NewLuckBean>() {
+                @Override
+                public void onResponse(Call<NewLuckBean> call, Response<NewLuckBean> response) {
+                    LogUtil.e("onResponse", response.body().toString());
+                    NewLuckBean body = response.body();
+                    String everyLuck = body.getEveryluck();
+                    String everynper = body.getEverynper();
+                    LogUtil.e("getLuckandnper", everyLuck + "..." + everynper);
+                }
+
+                @Override
+                public void onFailure(Call<NewLuckBean> call, Throwable t) {
+                    LogUtil.e("onResponse", t.getMessage());
+                }
+            });
+            List<DCBModel> dcbList = LitePal.where().order("dcbDate").find(DCBModel.class);
+            String everyPer ="";
+            if(dcbList!=null&&dcbList.size()>0){
+                List<DCBModel> dcbList2 = LitePal.select("MAX(id)","dcbball","dcbdate").where().order("id").find(DCBModel.class);
+//                LitePal.where("id=?",).order("dcbDate").find(DCBModel.class);
+                for (DCBModel dcb:
+                     dcbList2) {
+                    everyPer =dcb.getDcbDate();
+                    Log.e("everyPer",dcb.getId()+"");
+//                    Log.e("everyPer",everyPer);
+//                    Log.e("everyPer",dcb.getDcbBall());
+                }
+            }else{
+                everyPer ="";
+            }
+            Log.e("everyPer1",everyPer);
+            Call<List<NewLuckBean>> allLuck = NetWorkUtil.getApiService().getAllLuck(everyPer);
+            allLuck.enqueue(new Callback<List<NewLuckBean>>() {
+                @Override
+                public void onResponse(Call<List<NewLuckBean>> call, Response<List<NewLuckBean>> response) {
+                    Gson gson = new Gson();
+                    List<NewLuckBean> stringList = response.body();
+
+                    for (NewLuckBean newLuckBean:stringList){
+//                        Log.e("response222222",newLuckBean.getEveryluck());
+                        DCBModel dn = new DCBModel();
+                        dn.setDcbBall(newLuckBean.getEveryluck());
+                        dn.setDcbDate(newLuckBean.getEverynper());
+                        dn.save();
+                    }
+                }
+
+                @Override
+                public void onFailure(Call<List<NewLuckBean>> call, Throwable t) {
+                    LogUtil.e("onResponse12", t.getMessage());
+                }
+            });
+            Call<List<NewLuckBean>> myLuck = NetWorkUtil.getApiService().getMyLuck();
+            myLuck.enqueue(new Callback<List<NewLuckBean>>() {
+                @Override
+                public void onResponse(Call<List<NewLuckBean>> call, Response<List<NewLuckBean>> response) {
+                    LogUtil.e("getResponse2", response.body().toString());
+                }
+
+                @Override
+                public void onFailure(Call<List<NewLuckBean>> call, Throwable t) {
+                    LogUtil.e("getResponse23", t.getMessage());
+                }
+            });
     }
     @OnClick(R.id.test_bt_notice)
     public void onClick(View v) {

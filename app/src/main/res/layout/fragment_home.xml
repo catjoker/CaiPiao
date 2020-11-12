@@ -17,14 +17,14 @@
         android:layout_height="200dp"
         android:layout_below="@id/banner"
         android:layout_marginTop="10dp" />
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/test_bt_notice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/videoplayer"
         android:layout_marginTop="20dp"
         android:text="点我调用通知"/>
-    <android.support.v7.widget.AppCompatEditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:layout_width="@dimen/dp80"
         android:layout_height="@dimen/dp42"
         android:textColor="@color/black"

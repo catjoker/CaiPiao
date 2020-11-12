@@ -5,19 +5,19 @@
     android:layout_height="150dp"
     android:background="#8700CC">
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_text"
         style="@style/title_text"
         android:text="@string/title_text_name" />
 
-    <android.support.v7.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_close"
         style="@style/small_iv_button"
         android:layout_alignParentRight="true"
         android:layout_marginRight="5dp"
         android:src="@drawable/login" />
 
-    <android.support.v7.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_attention"
         style="@style/small_iv_button"
         android:layout_alignParentLeft="true"

@@ -2,15 +2,14 @@ package com.BASofttech.caipiao.ui.fragment;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.support.v7.widget.AppCompatTextView;
 import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
+
+import androidx.appcompat.widget.AppCompatTextView;
 
 import com.BASofttech.caipiao.R;
 import com.BASofttech.caipiao.util.GetMacUtil;
-import com.BASofttech.caipiao.util.ToastUtil;
 
 import butterknife.BindView;
 import butterknife.OnClick;

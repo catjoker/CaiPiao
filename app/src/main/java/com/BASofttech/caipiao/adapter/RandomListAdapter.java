@@ -2,8 +2,6 @@ package com.BASofttech.caipiao.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.style.BackgroundColorSpan;
@@ -12,6 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.BASofttech.caipiao.R;
 import com.BASofttech.caipiao.model.DCBModel;
@@ -51,15 +52,15 @@ public class RandomListAdapter extends RecyclerView.Adapter<RandomListAdapter.Ra
             if (Constant.DCB_NAME.equals(Constant.spinnerSb.toString())) {
                 style.setSpan(redSpan, 0, 17, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
                 style.setSpan(greenSpan, 17, 22, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-                DCBModel dcb = new DCBModel();
-                dcb.setRedBall1(list.get(position).substring(0, 2));
-                dcb.setRedBall2(list.get(position).substring(3, 5));
-                dcb.setRedBall3(list.get(position).substring(6, 8));
-                dcb.setRedBall4(list.get(position).substring(9, 11));
-                dcb.setRedBall5(list.get(position).substring(12, 14));
-                dcb.setRedBall6(list.get(position).substring(15, 17));
-                dcb.setBlueBall(list.get(position).substring(20, 22));
-                dcb.save();
+//                DCBModel dcb = new DCBModel();
+//                dcb.setRedBall1(list.get(position).substring(0, 2));
+//                dcb.setRedBall2(list.get(position).substring(3, 5));
+//                dcb.setRedBall3(list.get(position).substring(6, 8));
+//                dcb.setRedBall4(list.get(position).substring(9, 11));
+//                dcb.setRedBall5(list.get(position).substring(12, 14));
+//                dcb.setRedBall6(list.get(position).substring(15, 17));
+//                dcb.setBlueBall(list.get(position).substring(20, 22));
+//                dcb.save();
             } else if (Constant.DLT_NAME.equals(Constant.spinnerSb.toString())) {
                 style.setSpan(redSpan, 0, 14, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
                 style.setSpan(greenSpan, 15, 21, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);

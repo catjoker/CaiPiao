@@ -1,5 +1,6 @@
 package com.BASofttech.caipiao.util;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.DialogFragment;
 import android.content.Context;
@@ -7,12 +8,13 @@ import android.hardware.biometrics.BiometricPrompt;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.os.CancellationSignal;
-import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
 
 import com.BASofttech.caipiao.R;
 
@@ -78,6 +80,7 @@ public class FingerprintDialogFragment extends DialogFragment {
         stopListening();
     }
 
+    @SuppressLint("MissingPermission")
     private void startListening(Cipher cipher) {
         isSelfCancelled = false;
         mCancellationSignal = new CancellationSignal();

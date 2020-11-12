@@ -12,12 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:background="#8700cc" >
-
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             style="@style/title_text"
             android:text="活动" />
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iv_login"
             style="@style/small_iv_button"
             android:layout_alignParentRight="true"
@@ -38,13 +37,13 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal" >
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:text="用户名:" />
 
-            <android.support.v7.widget.AppCompatEditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/login_et_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -58,7 +57,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal" >
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -66,7 +65,7 @@
                 android:textColor="@color/black"
                 android:text="密码:  " />
 
-            <android.support.v7.widget.AppCompatEditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/login_et_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -79,7 +78,7 @@
 
         </LinearLayout>
 
-        <android.support.v7.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/login_bt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
